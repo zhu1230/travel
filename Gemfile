@@ -12,7 +12,8 @@ gem 'mysql2'
 
 # Deploy with Capistrano
 gem 'capistrano'
-
+gem 'authlogic'
+gem "rails3-generators"
 # To use debugger
 # gem 'ruby-debug'
 

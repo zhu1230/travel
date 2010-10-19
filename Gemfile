@@ -14,6 +14,7 @@ gem 'mysql2'
 gem 'capistrano'
 gem 'authlogic'
 gem "rails3-generators"
+gem "paperclip"
 # To use debugger
 # gem 'ruby-debug'
 

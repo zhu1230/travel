@@ -1,0 +1,41 @@
+<%= form_for(@post, :html => { :multipart => true } ) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+	<%=f.label :Subject%>:
+	<%=f.text_field	:subject%><br/>
+	<%=f.label :Pcitures%><Br/>
+	<%=f.fields_for :pictures do |ps|%>
+	<%=ps.label :title%>
+	<%=ps.text_field :description%>
+	<%=ps.label :Upload%>
+	<%puts ps.blank?%>
+	<%=ps.object.new_record? ? (ps.file_field :image) : image_tag(ps.object.image.url(:thumb))%>
+            <%= ps.label :_destroy, 'Remove:' -%>
+            <%= ps.check_box :_destroy -%>
+	<br/>
+ 
+	<%end%>
+	<%=f.label :Links%><br/>
+	<%=f.fields_for :links do |ls|%>
+	<%=ls.label :Title%>
+	<%=ls.text_field :description%>
+	<%=ls.label :url%>
+	<%=ls.url_field :url%>
+	<%= ls.label :_destroy, 'Remove:' -%>
+    <%= ls.check_box :_destroy -%>
+	<br/>
+	<%end%>
+    <%= f.submit %>
+  </div>
+<% end %>

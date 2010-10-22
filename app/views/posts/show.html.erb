@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+<%=label_tag :Subject%>
+<%=h @post.subject%>
+<%=label_tag :Pictures%><br/>
+<%@post.pictures.each do |pic|%>
+<%=label_tag :Title%><%=image_tag pic.image.url%>
+<%end%>
+<%=label_tag :Links%><br/>
+<%@post.links.each do |link|%>
+<%=link_to link.description,link.url%>
+<%end%>
+<br/>
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

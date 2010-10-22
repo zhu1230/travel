@@ -1,4 +1,6 @@
 Travel::Application.routes.draw do
+  resources :posts
+
   get "user_sessions/new"
 
   # The priority is based upon order of creation:

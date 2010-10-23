@@ -3,11 +3,11 @@
 <%=h @post.subject%>
 <%=label_tag :Pictures%><br/>
 <%@post.pictures.each do |pic|%>
-<%=label_tag :Title%><%=image_tag pic.image.url%>
+<%=label_tag :Title,'Title:  '%><%=pic.description%><%=image_tag pic.image.url(:medium)%><br/>
 <%end%>
 <%=label_tag :Links%><br/>
 <%@post.links.each do |link|%>
-<%=link_to link.description,link.url%>
+<%=link_to link.description.blank? ? link.url : link.description,link.url%><br/>
 <%end%>
 <br/>
 <%= link_to 'Edit', edit_post_path(@post) %> |

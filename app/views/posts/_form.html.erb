@@ -1,4 +1,5 @@
 <%= form_for(@post, :html => { :multipart => true } ) do |f| %>
+<%@post.pictures.build ; @post.links.build%>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -14,28 +15,39 @@
   <div class="actions">
 	<%=f.label :Subject%>:
 	<%=f.text_field	:subject%><br/>
-	<%=f.label :Pcitures%><Br/>
-	<%=f.fields_for :pictures do |ps|%>
-	<%=ps.label :title%>
-	<%=ps.text_field :description%>
-	<%=ps.label :Upload%>
-	<%puts ps.blank?%>
-	<%=ps.object.new_record? ? (ps.file_field :image) : image_tag(ps.object.image.url(:thumb))%>
-            <%= ps.label :_destroy, 'Remove:' -%>
-            <%= ps.check_box :_destroy -%>
+	<br/><br/>
+	<%=f.label :Tags,'Tags:(separate by comma)'%>
+	<%=f.text_field :tag_list%>
 	<br/>
- 
-	<%end%>
-	<%=f.label :Links%><br/>
+	<%=f.label :Pcitures,'Pictures:  '%><%=link_to_function 'add picture',"$('pictures').insert({'bottom':'<div>'+$('picture_blank').innerHTML.gsub(/post\\\[pictures_attributes\\\]\\\[\\d+\\\]/, 'post[pictures_attributes]['+$$('#pictures div').size()+']')+'</div>'});",{:style=>'color:red'}%><Br/>
+<div id='pictures'>	
+	
+			<%=f.fields_for :pictures do |ps|%>
+			<div <%="style='display:none' id='picture_blank'" if ps.object.new_record? && ps.object.errors.blank? %>>
+			<%=ps.hidden_field :id%>
+			<%=ps.label :title%>
+			<%=ps.text_field :description%>
+			<%=ps.label :Upload%>
+			<%=ps.object.new_record? ? (ps.file_field :image) : image_tag(ps.object.image.url(:thumb))%>
+		            <%= ps.label :_destroy, 'Remove:' -%>
+		            <%= ps.check_box :_destroy -%>	<br/>
+		</div>
+			<%end%>
+	
+</div>
+	<%=f.label :Links,'Links:    '%><%=link_to_function 'add link',"$('links').insert({'bottom':'<div>'+$('link_blank').innerHTML.gsub(/post\\\[links_attributes\\\]\\\[\\d+\\\]/, 'post[links_attributes]['+$$('#links div').size()+']')+'</div>'});",{:style=>'color:red'}%><br/>
+	<div id='links'>
 	<%=f.fields_for :links do |ls|%>
+	<div <%="style='display:none' id='link_blank'" if ls.object.new_record? && ls.object.errors.blank?%> >
+	<%=ls.hidden_field :id%>
 	<%=ls.label :Title%>
 	<%=ls.text_field :description%>
 	<%=ls.label :url%>
 	<%=ls.url_field :url%>
 	<%= ls.label :_destroy, 'Remove:' -%>
     <%= ls.check_box :_destroy -%>
-	<br/>
-	<%end%>
+	<br/></div>
+	<%end%></div>
     <%= f.submit %>
   </div>
 <% end %>

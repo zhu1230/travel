@@ -15,6 +15,7 @@ gem 'capistrano'
 gem 'authlogic'
 gem "rails3-generators"
 gem "paperclip"
+gem 'acts-as-taggable-on'
 # To use debugger
 # gem 'ruby-debug'
 

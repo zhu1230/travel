@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/views/posts/index.html.erb</string>
+	<string>app/controllers/posts_controller.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -49,20 +49,6 @@
 			<key>firstVisibleLine</key>
 			<integer>18</integer>
 		</dict>
-		<key>app/models/post.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>98</integer>
-				<key>line</key>
-				<integer>4</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>app/models/user_session.rb</key>
 		<dict>
 			<key>caret</key>
@@ -71,62 +57,6 @@
 				<integer>3</integer>
 				<key>line</key>
 				<integer>4</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/views/posts/_form.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>9</integer>
-				<key>line</key>
-				<integer>35</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>6</integer>
-		</dict>
-		<key>app/views/posts/index.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>12</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/views/posts/new.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/views/posts/show.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>4</integer>
-				<key>line</key>
-				<integer>11</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -197,11 +127,6 @@
 		<string>Gemfile</string>
 		<string>app/models/user_session.rb</string>
 		<string>app/controllers/posts_controller.rb</string>
-		<string>app/views/posts/new.html.erb</string>
-		<string>app/views/posts/_form.html.erb</string>
-		<string>app/models/post.rb</string>
-		<string>app/views/posts/show.html.erb</string>
-		<string>app/views/posts/index.html.erb</string>
 		<string>db/migrate/20101022144609_add_subject_to_post.rb</string>
 		<string>config/routes.rb</string>
 		<string>db/migrate/20101019103643_create_pictures.rb</string>
@@ -209,6 +134,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{533, 205}, {1757, 668}}</string>
+	<string>{{488, 238}, {1757, 668}}</string>
 </dict>
 </plist>

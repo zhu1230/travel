@@ -1,7 +1,7 @@
 <%= form_for(@user_session,:url => {:action => "create"}) do |f| %>  
 <%= render "shared/error_messages", :target => @user_session %> 
 
-  <%=link_to 'register',new_user_url%>
+ 
   <div class="field">  
     <%= f.label :login %><br />  
     <%= f.text_field :login %>  
@@ -11,6 +11,6 @@
     <%= f.password_field :password %>  
   </div>  
   <div class="actions">  
-    <%= f.submit 'Login' %>  
-  </div>  
+    <%= f.submit 'Login' %>  <%=link_to 'register',new_user_url%>
+  </div>   
 <% end %>

@@ -6,10 +6,17 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
+<style type="text/css" media="screen">
+	#main {
+		margin: 20px auto;
+		width:960px;
+	}
+</style>
 <body>
 	<%=render 'shared/top'%>
-
+<div id='main'>
 <%= yield %>
-
+</div>
+<%=render 'shared/bottom'%>
 </body>
 </html>

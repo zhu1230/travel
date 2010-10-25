@@ -1,4 +1,8 @@
 Travel::Application.routes.draw do
+  get "contact/index"
+
+  get "contact/create"
+
   resources :posts
   resources :posts do
 	resources :tags
@@ -9,7 +13,8 @@ Travel::Application.routes.draw do
   end
 end
   get "user_sessions/new"
-
+match 'contact' => 'contact#index', :as => :contact
+match 'contact/create' => 'contact#create'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -59,7 +64,7 @@ end
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+ 
 
   # See how all your routes lay out with "rake routes"
 
@@ -71,4 +76,6 @@ end
   resource :account, :controller => "users"
   match 'login' => "user_sessions#new",      :as => :login
   match 'logout' => "user_sessions#destroy", :as => :logout
+  match 'contact' => 'contact#index', :as => :contact
+  root :to => "posts#index"
 end

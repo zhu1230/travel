@@ -1,0 +1,54 @@
+<style type="text/css" media="screen">
+	#header {
+	background: #400 url(/images/n1.gif) repeat-x;
+	height: 122px;
+	width: 100%;
+	}
+	#header_inner {
+	height: 122px;
+	margin: 0px auto;
+	position: relative;
+	width: 950px;
+	}#menu {
+	bottom: 0em;
+	position: absolute;
+	right: 0em;
+	}
+	#menu ul {
+	list-style: none;
+	}
+	#menu li {
+	float: left;
+	}
+	#menu li a {
+	background: white url(/images/n4.gif) repeat-x;
+	border: 1px solid white;
+	color: #616161;
+	display: block;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-left: 0.5em;
+	padding: 1.1em 1.4em 1em;
+	text-decoration: none;
+	text-transform: lowercase;
+	}
+	#search	{
+		display: inline;
+		margin-top: 20px;
+	}
+</style>
+<div id="header">
+	<div id="header_inner" class="fixed">
+		<div id='search' style='float:right;'><%= render 'shared/search_box' %></div>
+	<div id="logo"><a href="/"><img src="/images/logo.png" alt="FreeCSSTemplates.org - Really, they're free!"></a></div>
+	<div id="menu">
+		<ul>
+			<li><%=link_to 'Home',root_url%></li>
+			<li><%=link_to 'Posts',posts_url%></li>
+			<li><%=link_to 'Make Post',new_post_url%></li>
+			<li><%=current_user ? (link_to 'Logout',logout_url) : (link_to 'Login',login_url)%></li>
+			<li><%=link_to 'Contact',contact_url%></li>
+		</ul>
+	</div>
+	</div>
+</div>

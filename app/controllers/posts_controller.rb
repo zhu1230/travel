@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
-	before_filter :require_user, :only => [:new, :create,:destory,:update]
+	before_filter :require_user, :only => [:new, :create,:destory,:update,:edit]
   # GET /posts
   # GET /posts.xml
   def index
     @posts = Post.all
-
+@tags = Post.tag_counts_on(:tags)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @posts }
@@ -35,7 +35,6 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
-	puts ">>>>>>>"+@post.tags_from(current_user).to_s
   end
 
   # POST /posts
@@ -83,11 +82,7 @@ class PostsController < ApplicationController
   end
 	
 	def search
-		
+		@result=Post.find(:all,:conditions=>['subject like :search',{:search=>'%'+params[:search]+'%'}])
 	end
-	
-	def tag_cloud
-      @tags = Post.tag_counts_on(:tags)
-    end
 	
 end

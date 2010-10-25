@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/controllers/posts_controller.rb</string>
+	<string>app/views/posts/search.html.erb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,33 +21,33 @@
 	<integer>381</integer>
 	<key>metaData</key>
 	<dict>
-		<key>Gemfile</key>
+		<key>app/models/post.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>14</integer>
+				<integer>17</integer>
 				<key>line</key>
-				<integer>16</integer>
+				<integer>1</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>app/controllers/posts_controller.rb</key>
+		<key>app/models/user.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>21</integer>
+				<integer>15</integer>
 				<key>line</key>
-				<integer>27</integer>
+				<integer>2</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>18</integer>
+			<integer>0</integer>
 		</dict>
 		<key>app/models/user_session.rb</key>
 		<dict>
@@ -63,77 +63,61 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>config/routes.rb</key>
+		<key>app/views/posts/_form.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>2</integer>
+				<integer>76</integer>
 				<key>line</key>
-				<integer>61</integer>
+				<integer>40</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>21</integer>
+		</dict>
+		<key>app/views/posts/search.html.erb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>26</integer>
+				<key>line</key>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>db/migrate/20101019103643_create_pictures.rb</key>
+		<key>log/development.log</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>17</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>3</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>12</integer>
-				<key>line</key>
-				<integer>3</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>23</integer>
-				<key>line</key>
-				<integer>3</integer>
-			</dict>
-		</dict>
-		<key>db/migrate/20101022144609_add_subject_to_post.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>21</integer>
-				<key>line</key>
-				<integer>2</integer>
+				<integer>9831</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>9802</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>Gemfile</string>
 		<string>app/models/user_session.rb</string>
-		<string>app/controllers/posts_controller.rb</string>
-		<string>db/migrate/20101022144609_add_subject_to_post.rb</string>
-		<string>config/routes.rb</string>
-		<string>db/migrate/20101019103643_create_pictures.rb</string>
+		<string>app/views/posts/_form.html.erb</string>
+		<string>app/models/post.rb</string>
+		<string>app/models/user.rb</string>
+		<string>log/development.log</string>
+		<string>app/views/posts/search.html.erb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{488, 238}, {1757, 668}}</string>
+	<string>{{528, 121}, {1757, 668}}</string>
 </dict>
 </plist>

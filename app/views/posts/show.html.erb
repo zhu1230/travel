@@ -1,13 +1,18 @@
 <p id="notice"><%= notice %></p>
 <%=label_tag :Subject%>
-<%=h @post.subject%>
+<%=h @post.subject%><Br/>
+
+<%unless @post.pictures.blank?%>
 <%=label_tag :Pictures%><br/>
 <%@post.pictures.each do |pic|%>
 <%=label_tag :Title,'Title:  '%><%=pic.description%><%=image_tag pic.image.url(:medium)%><br/>
 <%end%>
+<%end%>
+<%unless @post.links%>
 <%=label_tag :Links%><br/>
 <%@post.links.each do |link|%>
 <%=link_to link.description.blank? ? link.url : link.description,link.url%><br/>
+<%end%>
 <%end%>
 <br/>
 <%= link_to 'Edit', edit_post_path(@post) %> |

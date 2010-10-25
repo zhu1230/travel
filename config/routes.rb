@@ -1,8 +1,11 @@
 Travel::Application.routes.draw do
   resources :posts
   resources :posts do
+	resources :tags
+	end
+  resources :posts do
   collection do
-    get 'search'
+    post 'search'
   end
 end
   get "user_sessions/new"

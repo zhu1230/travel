@@ -7,6 +7,7 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 # Area.create([{:name => 'Asia'},{:name => 'Middle East'},{:name => 'Europe'},{:name => 'Africa'},{:name => 'North America'},{:name => 'Canada'},{:name => 'South America'}])
+puts File.dirname(__FILE__)
 ActiveRecord::Base.connection.execute "truncate table areas"
 parent_id=0
 File.new('/Users/apple/Desktop/c.txt').each do |l|

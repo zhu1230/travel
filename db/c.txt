@@ -1,0 +1,69 @@
+Asia
+-Shanghai
+-Beijing
+-Guangzhou
+-Vietnam
+-Japan
+-South Korea
+-North Korea
+-Hong KOng
+-Philippines
+-Thailand
+-Singapore
+
+Middle East
+-Pakistan
+-Afghanistan
+-Iraq
+-Jordan
+-Turkey
+-Israel
+-Kuwait
+-Saudi Arabia
+
+Europe
+-Finland
+-Switzerland
+-Norway
+-England
+-France
+-Germany
+-Poland
+-Spain
+-Italy
+-Greece
+-Romania
+-Ukraine
+-Austria
+-Poland
+
+Africa
+-Kenya
+-South Africa
+-Congo
+-Liberia
+-Egypt
+
+
+North America
+-New York
+-San Francisco
+-Philadelphia
+-Chicago
+-Seattle
+-Pittsburg
+
+Canada
+-Toronto
+-Montreal
+
+South America
+-Bahamas
+-Brazil
+-Mexico
+-Argentina
+-Colombia
+-Paraguay
+-Venezuela
+-Uruguay
+-Chile

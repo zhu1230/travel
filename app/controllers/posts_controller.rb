@@ -84,5 +84,12 @@ class PostsController < ApplicationController
 	def search
 		@result=Post.find(:all,:conditions=>['subject like :search',{:search=>'%'+params[:search]+'%'}])
 	end
+	def tagged
+		@posts=Post.tagged_with(params[:tag])
+		flash.now[:notice]="There is nothing match the \""+params[:tag]+"\"" if @posts.blank?
+		render :action => :index
+	end
+	
+	
 	
 end

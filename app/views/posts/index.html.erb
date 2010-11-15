@@ -1,7 +1,7 @@
 <h1>Listing posts</h1>
 <%if @tags%>
 <% tag_cloud(@tags, %w(css1 css2 css3 css4)) do |tag, css_class| %>
-    <%= link_to tag.name, posts_url(tag), :class => css_class %>
+    <%= link_to tag.name,'posts/tagged/'+tag.name,{:class => css_class} %>
   <% end %>
 <%end%>
 <table>

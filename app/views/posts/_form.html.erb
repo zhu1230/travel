@@ -19,6 +19,9 @@
 	<%=f.label :Tags,'Tags:(separate by comma)'%>
 	<%=f.text_field :tag_list%>
 	<br/>
+	<%=f.label :Country%>
+	<%=f.select :area_id,grouped_options_for_select(area_by_groups,nil,'-select one-')%>
+	<br/>
 	<%=f.label :Pcitures,'Pictures:  '%><%=link_to_function 'add picture',"$('pictures').insert({'bottom':'<div>'+$('picture_blank').innerHTML.gsub(/post\\\[pictures_attributes\\\]\\\[\\d+\\\]/, 'post[pictures_attributes]['+$$('#pictures div').size()+']')+'</div>'});",{:style=>'color:red'}%><Br/>
 <div id='pictures'>	
 	

@@ -12,9 +12,12 @@
 		width:960px;
 	}
 </style>
+	<div style='display:none;'><%=image_tag "/images/ajax-loader.gif", {:title => "提交中", :style => "margin-left: 10px;",:id => 'ajax-loader'} %></div>
+		
 <body>
 	<%=render 'shared/top'%>
 <div id='main'>
+	<%=render :partial=>"shared/message_bar"%>
 <%= yield %>
 </div>
 <%=render 'shared/bottom'%>

@@ -1,7 +1,9 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%#= notice %></p> -->
+<%= javascript_include_tag 'comment.js'%>
 <%=label_tag :Subject%>
 <%=h @post.subject%><Br/>
-
+<%=label_tag :Country%>
+<%=@post.area.name%><br/>
 <%unless @post.pictures.blank?%>
 <%=label_tag :Pictures%><br/>
 <%@post.pictures.each do |pic|%>
@@ -15,5 +17,7 @@
 <%end%>
 <%end%>
 <br/>
+<%=render :partial => 'comments',:locals => {:post => @post}%>
+<%=render :partial => 'comment_form',:locals => {:post => @post}%>
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

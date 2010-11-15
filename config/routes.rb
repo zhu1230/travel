@@ -5,13 +5,14 @@ Travel::Application.routes.draw do
 
   resources :posts
   resources :posts do
-	resources :tags
+	post 'comments'
 	end
   resources :posts do
   collection do
     post 'search'
   end
-end
+	end
+match ":controller/:action/:tag"
   get "user_sessions/new"
 match 'contact' => 'contact#index', :as => :contact
 match 'contact/create' => 'contact#create'

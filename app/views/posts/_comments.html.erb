@@ -1,0 +1,36 @@
+<style type="text/css" media="screen">
+	ol.commentslist {
+	list-style: none;
+	margin: 5px 0px 12px;
+	}
+	.commentslist li.alt {
+	background: white;
+	}
+	.commentslist li {
+	background: white url(/images/lgrey_diag.gif) repeat 0% 0%;
+	border: 1px solid #BBB;
+	margin-bottom: 7px;
+	padding: 7px 0px;
+	}
+	.fix {
+	display: block;
+	}
+	.commentslist .comment_text {
+	line-height: 1.4em;
+	margin: 0px 7px;
+	overflow: hidden;
+	}
+	p.post_meta {
+	font-size: 11px;
+	margin: 0px 7px 0px 0px;
+	text-align: right;
+	text-transform: uppercase;
+	}
+</style>
+<div id="comments" class="section">
+	<h3><%=post.comments.size%> Comments, <%=link_to 'Leave a comment','#respond'%></h3>
+
+<ol id='commentslist' class="commentslist">
+<%=render :partial => 'comment',:collection => post.comments%>
+				</ol>
+</div>

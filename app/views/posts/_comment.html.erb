@@ -1,0 +1,11 @@
+		<li class="alt item" id="comment-<%=comment.id%>">
+	<div class="fix">
+	<div class="author_meta">
+		<p class="author_meta"><span class="user"><%=link_to comment.user.login,user_path(comment.user),:class => 'url'%></span> <span class="comment_edit"></span></p>
+	</div>
+	<div class="comment_text">
+					<p><%=comment.comment%></p>
+	</div>
+	<p class="post_meta"><a href="#comment-195" title="Comment Permalink"><%=comment.created_at%></a></p>
+	</div>
+</li>

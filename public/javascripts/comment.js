@@ -5,7 +5,8 @@ function init(o){
 			s.request({method:'post',
 			onComplete:function(){
 				s.select('img#ajax-loader').first().remove();
-				s.select("input[type='submit']").first().enable();
+				s.down("input[type='image']").enable();
+				
 			}});
 			event.stop();
 		});

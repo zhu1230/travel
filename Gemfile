@@ -17,6 +17,7 @@ gem "rails3-generators"
 gem "paperclip"
 gem 'acts-as-taggable-on'
 gem 'acts_as_commentable'
+gem 'dynamic_form'
 # gem 'awesome_nested_set',:git=>"git://github.com/collectiveidea/awesome_nested_set.git"
 # gem 'acts_as_commentable_with_threading', :git => 'http://github.com/elight/acts_as_commentable_with_threading.git'
 # To use debugger

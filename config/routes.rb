@@ -4,6 +4,7 @@ Travel::Application.routes.draw do
   get "contact/create"
 
   resources :posts
+resources :contacts
   resources :posts do
 	post 'comments'
 	end

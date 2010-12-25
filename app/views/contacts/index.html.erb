@@ -1,0 +1,37 @@
+<style type="text/css" media="screen">
+	.entrytext {
+	line-height: 140%;
+	margin: 2px 0px 0px;
+	}
+</style>
+<div>
+<% if @contact && @contact.errors.any? %>
+  <ul>
+    <% @contact.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+</div>
+<div class="entrytext">				
+<%form_for @contact do |f|%>
+<div class="contactleft"><label for="wpcf_your_name">Name: </label></div>
+<div class="contactright">
+<%=f.text_field :name,:size => 30,:maxlength => 50%> (required)</div>
+<div class="contactleft"><label for="wpcf_email">Email:</label></div>
+<div class="contactright">
+<%=f.text_field :email,:size => 30,:maxlength => 50%> (required)</div>
+<div class="contactleft"><label for="wpcf_website">Website:</label></div>
+<div class="contactright">
+<%=f.text_field :website,:size => 30,:maxlength => 100%> </div>
+<div class="contactleft"><label for="wpcf_msg">Message: </label></div>
+<div class="contactright"><%=f.text_area :message,:cols => 35,:rows => 8%></div>
+<div class="contactright">
+<%=f.submit 'Submit'%>
+<input type="hidden" name="wpcf_stage" value="process"></div>
+<p></p><%end%>
+<p></p>
+<div class="clean"></div>
+					
+				
+</div>

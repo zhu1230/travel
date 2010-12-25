@@ -6,6 +6,7 @@
 		page.insert_html 'bottom','commentslist',:partial => 'posts/comment',:object => comment
 		# page.highlight 'comment-#{comment.id}'
 		page.visual_effect :highlight, "comment-#{comment.id}"
+		page['new_comment'].reset
 	else
 		page.insert_html 'bottom','new_comment',:partial => 'shared/ajax-loader',:locals => {:message => comment.errors.full_messages.join('-')}
 	end

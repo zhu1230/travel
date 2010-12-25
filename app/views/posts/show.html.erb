@@ -1,5 +1,6 @@
 <!-- <p id="notice"><%#= notice %></p> -->
-<%= javascript_include_tag 'comment.js'%>
+<%= javascript_include_tag 'comment.js','lytebox.js'%>
+<%= stylesheet_link_tag 'lytebox.css' %>
 <%=label_tag :Subject%>
 <%=h @post.subject%><Br/>
 <%=label_tag :Country%>
@@ -7,7 +8,7 @@
 <%unless @post.pictures.blank?%>
 <%=label_tag :Pictures%><br/>
 <%@post.pictures.each do |pic|%>
-<%=label_tag :Title,'Title:  '%><%=pic.description%><%=image_tag pic.image.url(:medium)%><br/>
+<%=label_tag :Title,'Title:  '%><%=pic.description%><%=link_to (image_tag pic.image.url(:thumb)),pic.image.url(:medium),:rel=>"lyteshow[vacation]"%><br/>
 <%end%>
 <%end%>
 <%unless @post.links%>

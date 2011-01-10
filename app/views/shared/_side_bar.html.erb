@@ -1,0 +1,98 @@
+<style type="text/css" media="screen">
+	.sidebar{
+		width:240px;
+		background: #F7F7F7;
+		float:left;
+		margin:28px 0px 0px 40px;
+		padding-right:15px;
+		
+	}
+	.sidebar > ul > li {
+	list-style: none;
+	padding: 0px 20px 10px 0px;
+	color: #404040;
+	margin:50px 0px;
+	clear:both;
+	}
+	h2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 21px;
+	color: black;
+	margin: 20px 0 10px 0;
+	}
+	ul{ 
+	  list-style-type: none;
+	}
+	.c3  h3 {
+	width: 100%;
+	float: left;
+	color: #06F;
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	}
+	.c3 p{
+		width: 100%;
+		float: left;
+		line-height: 22px;
+		border-bottom: 1px dotted #D8D8D8;
+		padding: 0;
+		margin: 0;
+		padding: 0;
+	}
+	.c3 a{
+		font-size: 14px;
+		color: #464646;
+	}
+	.c3{
+		width: 180px;
+		float: left;
+		padding: 6px 0px;
+/*		background: #F6FBFE;*/
+		margin-bottom:30px;
+	}
+	.blank{
+		clear:both;
+	}
+</style>
+<div class='sidebar'>
+	<ul>
+		<li>
+			<h2>Categories</h2>
+			<div class="c3">
+				<%Area.roots.each do |r|%>
+			            	<h3><%=r.name%></h3>
+						<p>	<%r.children.each do |c|%>
+							<%=link_to c.name,area_posts_path(:id => c.id)%>
+							<%end%></p>
+			                <div class="blank"></div>
+				<%end%>
+
+			</div>
+		</li>
+		<li >
+			<h2>Recent Posts</h2>
+			<%@recents=Post.by_created_at.limited(10)%>
+				<%for recent in @recents%>
+				<p style='line-height:14px;'><%=link_to recent.subject,post_path(recent)%></p>
+				<%end%>
+		</li>
+		<li>
+			<h2>Tag Cloud</h2>
+			<div><%@tags=Post.tag_counts_on(:tags)%>
+			<% tag_cloud(@tags, %w(css1 css2 css3 css4)) do |tag, css_class| %>
+			    <%= link_to tag.name,'/posts/tagged/'+tag.name,{:class => css_class} %>
+			  <% end %>
+			</div>
+		</li>
+		<li>
+			<h2>Archives</h2>
+			<div style='margin-left:-40px;'>
+				<%=draw_archive_tree :toggle => false %>
+			</div>
+		</li>
+	</ul>
+</div>

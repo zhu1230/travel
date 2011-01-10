@@ -10,6 +10,7 @@
 	#main {
 		margin: 20px auto;
 		width:960px;
+/*		float:left;*/
 	}
 </style>
 	<div style='display:none;'><%=image_tag "/images/ajax-loader.gif", {:title => "提交中", :style => "margin-left: 10px;",:id => 'ajax-loader'} %></div>
@@ -18,8 +19,10 @@
 	<%=render 'shared/top'%>
 <div id='main'>
 	<%=render :partial=>"shared/message_bar"%>
-<%= yield %>
+<div style='width:665px;float:left;'><%= yield %></div>
+<%=render :partial => 'shared/side_bar'%>
 </div>
+
 <%=render 'shared/bottom'%>
 </body>
 </html>

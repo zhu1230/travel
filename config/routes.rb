@@ -11,6 +11,7 @@ resources :contacts
   resources :posts do
   collection do
     post 'search'
+	get 'area'
   end
 	end
 match ":controller/:action/:tag"

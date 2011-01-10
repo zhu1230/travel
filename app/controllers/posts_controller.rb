@@ -4,7 +4,6 @@ class PostsController < ApplicationController
   # GET /posts.xml
   def index
     @posts = Post.all
-@tags = Post.tag_counts_on(:tags)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @posts }

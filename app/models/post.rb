@@ -1,4 +1,6 @@
 class Post < ActiveRecord::Base
+	include Pacecar
+	acts_as_archive
 	acts_as_taggable
 	acts_as_commentable
 	has_many :pictures

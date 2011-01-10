@@ -30,6 +30,9 @@ GEM
     activesupport (3.0.0)
     acts-as-taggable-on (2.0.6)
     acts_as_commentable (3.0.1)
+    archive_tree (1.0.3)
+      actionpack (~> 3.0.0)
+      activerecord (~> 3.0.0)
     arel (1.0.1)
       activesupport (~> 3.0.0)
     authlogic (2.1.6)
@@ -59,6 +62,7 @@ GEM
     net-ssh (2.0.23)
     net-ssh-gateway (1.0.1)
       net-ssh (>= 1.99.1)
+    pacecar (1.4.4)
     paperclip (2.3.4)
       activerecord
       activesupport
@@ -94,10 +98,12 @@ PLATFORMS
 DEPENDENCIES
   acts-as-taggable-on
   acts_as_commentable
+  archive_tree
   authlogic
   capistrano
   dynamic_form
   mysql2
+  pacecar
   paperclip
   rails (= 3.0.0)
   rails3-generators

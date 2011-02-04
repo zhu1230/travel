@@ -1,0 +1,1221 @@
+--- 
+- !ruby/object:Area 
+  attributes: 
+    id: 1
+    name: Asia
+    parent_id: 
+    lft: 1
+    rgt: 24
+    depth: 0
+    created_at: 2011-01-31 11:03:50 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 2
+    name: -Shanghai
+    parent_id: 1
+    lft: 2
+    rgt: 3
+    depth: 1
+    created_at: 2011-01-31 11:03:50 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 3
+    name: -Beijing
+    parent_id: 1
+    lft: 4
+    rgt: 5
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 4
+    name: -Guangzhou
+    parent_id: 1
+    lft: 6
+    rgt: 7
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 5
+    name: -Vietnam
+    parent_id: 1
+    lft: 8
+    rgt: 9
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 6
+    name: -Japan
+    parent_id: 1
+    lft: 10
+    rgt: 11
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 7
+    name: -South Korea
+    parent_id: 1
+    lft: 12
+    rgt: 13
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 8
+    name: -North Korea
+    parent_id: 1
+    lft: 14
+    rgt: 15
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 9
+    name: -Hong KOng
+    parent_id: 1
+    lft: 16
+    rgt: 17
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 10
+    name: -Philippines
+    parent_id: 1
+    lft: 18
+    rgt: 19
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 11
+    name: -Thailand
+    parent_id: 1
+    lft: 20
+    rgt: 21
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 12
+    name: -Singapore
+    parent_id: 1
+    lft: 22
+    rgt: 23
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 13
+    name: Middle East
+    parent_id: 
+    lft: 25
+    rgt: 42
+    depth: 0
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 14
+    name: -Pakistan
+    parent_id: 13
+    lft: 26
+    rgt: 27
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 15
+    name: -Afghanistan
+    parent_id: 13
+    lft: 28
+    rgt: 29
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 16
+    name: -Iraq
+    parent_id: 13
+    lft: 30
+    rgt: 31
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 17
+    name: -Jordan
+    parent_id: 13
+    lft: 32
+    rgt: 33
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 18
+    name: -Turkey
+    parent_id: 13
+    lft: 34
+    rgt: 35
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 19
+    name: -Israel
+    parent_id: 13
+    lft: 36
+    rgt: 37
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 20
+    name: -Kuwait
+    parent_id: 13
+    lft: 38
+    rgt: 39
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 21
+    name: -Saudi Arabia
+    parent_id: 13
+    lft: 40
+    rgt: 41
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 22
+    name: Europe
+    parent_id: 
+    lft: 43
+    rgt: 70
+    depth: 0
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 23
+    name: -Finland
+    parent_id: 22
+    lft: 44
+    rgt: 45
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 24
+    name: -Switzerland
+    parent_id: 22
+    lft: 46
+    rgt: 47
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 25
+    name: -Norway
+    parent_id: 22
+    lft: 48
+    rgt: 49
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 26
+    name: -England
+    parent_id: 22
+    lft: 50
+    rgt: 51
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 27
+    name: -France
+    parent_id: 22
+    lft: 52
+    rgt: 53
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 28
+    name: -Germany
+    parent_id: 22
+    lft: 54
+    rgt: 55
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 29
+    name: -Poland
+    parent_id: 22
+    lft: 56
+    rgt: 57
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 30
+    name: -Spain
+    parent_id: 22
+    lft: 58
+    rgt: 59
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 31
+    name: -Italy
+    parent_id: 22
+    lft: 60
+    rgt: 61
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 32
+    name: -Greece
+    parent_id: 22
+    lft: 62
+    rgt: 63
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 33
+    name: -Romania
+    parent_id: 22
+    lft: 64
+    rgt: 65
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 34
+    name: -Ukraine
+    parent_id: 22
+    lft: 66
+    rgt: 67
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 35
+    name: -Austria
+    parent_id: 22
+    lft: 68
+    rgt: 69
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 36
+    name: Africa
+    parent_id: 
+    lft: 71
+    rgt: 82
+    depth: 0
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 37
+    name: -Kenya
+    parent_id: 36
+    lft: 72
+    rgt: 73
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 38
+    name: -South Africa
+    parent_id: 36
+    lft: 74
+    rgt: 75
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 39
+    name: -Congo
+    parent_id: 36
+    lft: 76
+    rgt: 77
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 40
+    name: -Liberia
+    parent_id: 36
+    lft: 78
+    rgt: 79
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 41
+    name: -Egypt
+    parent_id: 36
+    lft: 80
+    rgt: 81
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 42
+    name: North America
+    parent_id: 
+    lft: 83
+    rgt: 96
+    depth: 0
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 43
+    name: -New York
+    parent_id: 42
+    lft: 84
+    rgt: 85
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 44
+    name: -San Francisco
+    parent_id: 42
+    lft: 86
+    rgt: 87
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 45
+    name: -Philadelphia
+    parent_id: 42
+    lft: 88
+    rgt: 89
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 46
+    name: -Chicago
+    parent_id: 42
+    lft: 90
+    rgt: 91
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 47
+    name: -Seattle
+    parent_id: 42
+    lft: 92
+    rgt: 93
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 48
+    name: -Pittsburg
+    parent_id: 42
+    lft: 94
+    rgt: 95
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 49
+    name: Canada
+    parent_id: 
+    lft: 97
+    rgt: 102
+    depth: 0
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 50
+    name: -Toronto
+    parent_id: 49
+    lft: 98
+    rgt: 99
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 51
+    name: -Montreal
+    parent_id: 49
+    lft: 100
+    rgt: 101
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 52
+    name: South America
+    parent_id: 
+    lft: 103
+    rgt: 122
+    depth: 0
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 53
+    name: -Bahamas
+    parent_id: 52
+    lft: 104
+    rgt: 105
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 54
+    name: -Brazil
+    parent_id: 52
+    lft: 106
+    rgt: 107
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 55
+    name: -Mexico
+    parent_id: 52
+    lft: 108
+    rgt: 109
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 56
+    name: -Argentina
+    parent_id: 52
+    lft: 110
+    rgt: 111
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 57
+    name: -Colombia
+    parent_id: 52
+    lft: 112
+    rgt: 113
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 58
+    name: -Paraguay
+    parent_id: 52
+    lft: 114
+    rgt: 115
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 59
+    name: -Venezuela
+    parent_id: 52
+    lft: 116
+    rgt: 117
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 60
+    name: -Uruguay
+    parent_id: 52
+    lft: 118
+    rgt: 119
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false
+- !ruby/object:Area 
+  attributes: 
+    id: 61
+    name: -Chile
+    parent_id: 52
+    lft: 120
+    rgt: 121
+    depth: 1
+    created_at: 2011-01-31 11:03:51 Z
+    updated_at: 2011-01-31 11:04:09 Z
+  attributes_cache: {}
+
+  changed_attributes: {}
+
+  destroyed: false
+  marked_for_destruction: false
+  new_record: false
+  previously_changed: {}
+
+  readonly: false

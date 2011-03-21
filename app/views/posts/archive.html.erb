@@ -1,0 +1,17 @@
+<h1>Archives for <%="#{params[:year]}"+("-#{params[:month]}" unless params[:month].blank? ).to_s%></h1>
+
+<div>
+	<%unless @posts.empty?%>
+	<ul>
+		<%@posts.each do |post|%>
+		
+<li>		<td><%= link_to post.subject, post,{:style=>'color:red'} %></td>
+	    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+	    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td></li>
+		<%end%>
+	</ul>
+	<%=will_paginate @posts,:class => 'digg_pagination'%>
+	<%else%>
+	<h3>Sorry,have not any posts here.</h3>
+	<%end%>
+</div>

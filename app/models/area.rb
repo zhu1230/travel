@@ -1,6 +1,7 @@
 class Area < ActiveRecord::Base
 	acts_as_nested_set
 	after_save :update_depth
+	has_many :posts
 
 	  # Validations
 	  validates_presence_of :name

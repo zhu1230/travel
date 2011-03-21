@@ -6,7 +6,7 @@ class PostsController < ApplicationController
     @posts = Post.all
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @posts }
+      format.xml  { render :xml => @posts,:layout => false }
     end
   end
 
@@ -41,6 +41,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params[:post])
 	current_user.tag(@post, :with => params[:post][:tag_list], :on => :tags)
+	puts @post.save
     respond_to do |format|
       if @post.save
         format.html { redirect_to(@post, :notice => 'Post was successfully created.') }
@@ -51,7 +52,7 @@ class PostsController < ApplicationController
       end
     end
   end
-
+	
   # PUT /posts/1
   # PUT /posts/1.xml
   def update
@@ -87,6 +88,17 @@ class PostsController < ApplicationController
 		@posts=Post.tagged_with(params[:tag])
 		flash.now[:notice]="There is nothing match the \""+params[:tag]+"\"" if @posts.blank?
 		render :action => :index
+	end
+	def area
+		@posts=Area.find(params[:id]).posts.all.paginate :page => params[:page],:per_page => 10
+		@area=Area.find(params[:id])
+	end
+	def archive
+		@posts=(if params[:month]
+		Post.created_at_in_year(params[:year]).created_at_in_month(params[:month])
+		else
+			Post.created_at_in_year(params[:year])
+		end).paginate  :page => params[:page],:per_page => 10
 	end
 	
 	

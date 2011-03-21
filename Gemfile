@@ -21,6 +21,7 @@ gem 'dynamic_form'
 gem 'pacecar'
 gem 'archive_tree'
 gem 'seed_dump'
+gem 'will_paginate'
 # gem 'awesome_nested_set',:git=>"git://github.com/collectiveidea/awesome_nested_set.git"
 # gem 'acts_as_commentable_with_threading', :git => 'http://github.com/elight/acts_as_commentable_with_threading.git'
 # To use debugger

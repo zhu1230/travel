@@ -1,9 +1,13 @@
 Travel::Application.routes.draw do
   get "contact/index"
 
-  get "contact/create"
+	match "posts/archives/:year/(:month)",:to => "posts#archive",:as => :archive
 
-  resources :posts
+  resources :posts do
+	collection do
+		get 'area'
+	end
+end
 resources :contacts
   resources :posts do
 	post 'comments'
@@ -12,8 +16,12 @@ resources :contacts
   collection do
     post 'search'
 	get 'area'
+	get 'tagged'
+	get 'archive'
   end
+
 	end
+
 match ":controller/:action/:tag"
   get "user_sessions/new"
 match 'contact' => 'contact#index', :as => :contact

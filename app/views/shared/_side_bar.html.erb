@@ -4,7 +4,7 @@
 		background: #F7F7F7;
 		float:left;
 		margin:28px 0px 0px 40px;
-		padding-right:15px;
+		padding-right:10px;
 		
 	}
 	.sidebar > ul > li {
@@ -19,6 +19,7 @@
 	font-size: 21px;
 	color: black;
 	margin: 20px 0 10px 0;
+
 	}
 	ul{ 
 	  list-style-type: none;
@@ -57,9 +58,38 @@
 	.blank{
 		clear:both;
 	}
+	ul.subscribe-stuff {
+	list-style: none;
+	margin: 0px 0 35px -24px;
+	padding: 0px 0px;
+		clear:both;
+	}
+	ul.subscribe-stuff li {
+	float: left;
+	margin: 0 3px 0 0;
+	padding: 0;
+	}
+	ul.subscribe-stuff li a:hover { color: #99CCFF; background-color:transparent; }
+	ul.subscribe-stuff li a { color: #99CCFF; }
+	ul.subscribe-stuff li img {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	}
 </style>
 <div class='sidebar'>
 	<ul>
+		<li>
+			<h2>Updates</h2>
+			<ul class="subscribe-stuff">
+
+			      	<li><%=link_to image_tag('http://www.kuyainside.com/wp-content/themes/cool-blue/images/social_rss.png'), posts_url(:xml), :title=>'New Posts'%></li>
+			      	<li><%=link_to image_tag("http://www.kuyainside.com/wp-content/themes/cool-blue/images/social_facebook.png",:alt => 'Facebook',:title => 'Facebook'),"https://www.facebook.com/superchun6954",:html => {:rel =>'nofollow'}%></li>
+						<li><%=link_to image_tag("http://www.kuyainside.com/wp-content/themes/cool-blue/images/social_twitter.png",:alt => 'Twitter',:title => 'Twitter'),"http://twitter.com/#!/superchun6954",:html => {:rel => 'nofollow'}%></li>
+						<li><%=link_to image_tag("http://www.kuyainside.com/wp-content/themes/cool-blue/images/social_email.png",:alt=>"Subscribe via email!",:title=>"Subscribe via email!"),'mailto:zhu1230@gmail.com',:html => {:rel => 'nofollow'}%></li>
+						</ul>
+		</li>
 		<li>
 			<h2>Categories</h2>
 			<div class="c3">
@@ -91,7 +121,7 @@
 		<li>
 			<h2>Archives</h2>
 			<div style='margin-left:-40px;'>
-				<%=draw_archive_tree :toggle => false %>
+				<%=draw_archive_tree :route => :archive_path,:toggle => false %>
 			</div>
 		</li>
 	</ul>

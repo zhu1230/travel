@@ -40,6 +40,7 @@ class PostsController < ApplicationController
   # POST /posts.xml
   def create
     @post = Post.new(params[:post])
+@post.user=current_user
 	current_user.tag(@post, :with => params[:post][:tag_list], :on => :tags)
 	puts @post.save
     respond_to do |format|

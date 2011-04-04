@@ -2,7 +2,7 @@ Travel::Application.routes.draw do
   get "contact/index"
 
 	match "posts/archives/:year/(:month)",:to => "posts#archive",:as => :archive
-
+	# root :to => 'posts#indexd'
   resources :posts do
 	collection do
 		get 'area'

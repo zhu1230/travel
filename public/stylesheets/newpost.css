@@ -1,0 +1,26 @@
+.label{
+	width:100px;
+	float:left;
+	clear:left;
+	margin:10px 0px;
+	font: 20px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+.value{
+	width:565px;
+	float:left;
+	clear:right;
+	margin:10px 0px;
+	font: 20px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+div#pictures div,div#links div{
+/*	margin-left:100px;*/
+	float:right;
+	border: 1px solid #CCC;
+	font: 15px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	width:545px;
+	margin:10px;
+	padding:10px 5px;
+}
+.action{
+	width:665px;
+}

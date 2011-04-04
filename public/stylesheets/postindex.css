@@ -1,0 +1,55 @@
+.post{
+	border-bottom: 1px solid #CCC;
+	margin:10px;
+	clear:both;
+	float:left;
+	width:100%;
+	
+}
+.posts{
+	width:635px;
+	float:left;
+	
+}
+.title{
+	font: 22px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	width:100%;
+	float:left;
+}
+.user{
+	clear:both;
+	float:right;
+/*	width:100%;*/
+	font: 18px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+.content{
+	width:80%;
+	margin:10px auto;
+	
+	
+}
+.c_title{
+	
+	width:100%;
+	text-align:middle;
+	float:left;
+	height:20px;
+}
+.c_pic{
+	border: 1px solid #CCC;
+	width:100px;
+	float:left;
+}
+.pic{
+	clear:both;
+/*	width:100px;
+	height:100px;*/
+	
+	margin-top:10px;
+}
+.c_link{
+	clear:both;
+	margin:15px;
+	font: 20px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	color:#66C;
+}

@@ -1,0 +1,33 @@
+.value{
+	width:550px;
+	clear:right;
+	float:right;
+	margin:10px 0px;
+	font: 20px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+.label{
+	width:100px;
+	clear:left;
+	margin:10px 0px;
+	float:left;
+	font: 20px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	
+}
+.pics li,.links li{
+	width:550px;
+	float:right;
+	border-bottom: 1px solid #CCC;
+	font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	margin:10px 0px;
+	padding:10px 5px;
+}
+.show{
+	width:650px;
+	float:left;
+}
+.pic{
+	
+}
+.pic_title{
+	
+}

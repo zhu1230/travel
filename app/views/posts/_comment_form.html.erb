@@ -16,7 +16,7 @@
 	}
 	#comment {
 	overflow: auto;
-	width: 429px;
+	width: 480px;
 	}
 	#comments h3, h3#respond {
 	color: #555;
@@ -24,14 +24,16 @@
 	}
 	#comments {
 	padding: 12px 0px 0px;
-	width: 435px;
+	width: 480px;
 	}
 </style>
 <h3 id="respond">Reply to “<%=post.subject%>”</h3>
+<%if current_user%>
 <%form_for(Comment.new,:url => post_comments_path(post),:remote => true) do |comment|%>
-<p><%=comment.text_field :title,:size => 22, :id => 'url'%>
-<label for="url"><small>Title</small></label></p>
-<p><%=comment.text_area :comment,:cols => 60, :rows => 10,:id => 'comment' %></p>
+<p><%=comment.text_area :comment,:cols => 100, :rows => 7,:id => 'comment' %></p>
 <p><%=image_submit_tag 'btn_submit.gif',:id => 'submit'%>
 </p>
+<%end%>
+<%else%>
+<h4>You must <%=link_to 'login',login_path%> to comment.Or <%=link_to 'create new account',new_user_path%>.</h4>
 <%end%>

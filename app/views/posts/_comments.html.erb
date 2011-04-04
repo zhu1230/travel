@@ -1,14 +1,14 @@
 <style type="text/css" media="screen">
-	ol.commentslist {
-	list-style: none;
-	margin: 5px 0px 12px;
+	.commentslist {
+/*	list-style: none;*/
+	margin:10px 0px;
 	}
 	.commentslist li.alt {
 	background: white;
 	}
 	.commentslist li {
 	background: white url(/images/lgrey_diag.gif) repeat 0% 0%;
-	border: 1px solid #BBB;
+/*	border: 1px solid #BBB;*/
 	margin-bottom: 7px;
 	padding: 7px 0px;
 	}
@@ -26,11 +26,27 @@
 	text-align: right;
 	text-transform: uppercase;
 	}
+	.commentbox{
+	background-color: #ececec;
+	width: 450px;
+	padding: 10px;
+	word-break:break-all;
+	}
+
+	.commentfooter{
+	background: url(/images/arrow.gif) 20px 0 no-repeat; /*20px 0 equals horizontal and vertical position of arrow. Adjust as desired (ie: 20px -5px).*/
+	padding-left: 58px;
+	padding-top: 1px;
+	margin-bottom: 2em;
+	font-size: 90%;
+	color: #4A4A4A;
+	}
+	
 </style>
 <div id="comments" class="section">
 	<h3><%=post.comments.size%> Comments, <%=link_to 'Leave a comment','#respond'%></h3>
 
-<ol id='commentslist' class="commentslist">
+<div id='commentslist' class="commentslist">
 <%=render :partial => 'comment',:collection => post.comments%>
-				</ol>
+				</div>
 </div>

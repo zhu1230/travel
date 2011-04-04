@@ -13,32 +13,33 @@
   <% end %>
 
   <div class="actions">
-	<%=f.label :Subject%>:
-	<%=f.text_field	:subject%><br/>
-	<br/><br/>
-	<%=f.label :Tags,'Tags:(separate by comma)'%>
-	<%=f.text_field :tag_list%>
-	<br/>
-	<%=f.label :Country%>
-	<%=f.select :area_id,grouped_options_for_select(area_by_groups,nil,'-select one-')%>
-	<br/>
-	<%=f.label :Pcitures,'Pictures:  '%><%=link_to_function 'add picture',"$('pictures').insert({'bottom':'<div>'+$('picture_blank').innerHTML.gsub(/post\\\[pictures_attributes\\\]\\\[\\d+\\\]/, 'post[pictures_attributes]['+$$('#pictures div').size()+']')+'</div>'});",{:style=>'color:red'}%><Br/>
-<div id='pictures'>	
+	<div class='label'><%=f.label :Subject%>:</div>
+	<div class='value'><%=f.text_field	:subject%></div>
+
+	<div class='label'><%=f.label :Tags,'Tags:'%></div>
+	<div class='value'><%=f.text_field :tag_list%>(separate by comma)</div>
+	<div class='label'><%=f.label :Country,'Country:'%></div>
+	<div class='value'><%=f.select :area_id,grouped_options_for_select(area_by_groups,f.object.area_id,'-select one-')%></div>
+
+	<div class='label'><%=f.label :Pcitures,'Pictures:  '%></div>
+	<div class='value'><%=link_to_function 'add picture',"$('pictures').insert({'bottom':'<div class=\"value\">'+$('picture_blank').innerHTML.gsub(/post\\\[pictures_attributes\\\]\\\[\\d+\\\]/, 'post[pictures_attributes]['+$$('#pictures div').size()+']')+'</div>'});",{:style=>'color:red'}%></div>
+	<div id='pictures'>	
 	
 			<%=f.fields_for :pictures do |ps|%>
-			<div <%="style='display:none' id='picture_blank'" if ps.object.new_record? && ps.object.errors.blank? %>>
-			<%=ps.hidden_field :id%>
-			<%=ps.label :title%>
-			<%=ps.text_field :description%>
-			<%=ps.label :Upload%>
-			<%=ps.object.new_record? ? (ps.file_field :image) : image_tag(ps.object.image.url(:thumb))%>
-		            <%= ps.label :_destroy, 'Remove:' -%>
-		            <%= ps.check_box :_destroy -%>	<br/>
-		</div>
+			<div  <%="style='display:none' id='picture_blank'" if ps.object.new_record? && ps.object.errors.blank? %>>
+				<%=ps.hidden_field :id%>
+				<%=ps.label :title%>
+				<%=ps.text_field :description,:size => 20%>
+				<%#=ps.label :Upload%>
+				<%=ps.object.new_record? ? (ps.file_field :image) : image_tag(ps.object.image.url(:thumb))%>
+			            <%= ps.label :_destroy, 'Remove:' -%>
+			            <%= ps.check_box :_destroy -%>
+			</div>
 			<%end%>
 	
 </div>
-	<%=f.label :Links,'Links:    '%><%=link_to_function 'add link',"$('links').insert({'bottom':'<div>'+$('link_blank').innerHTML.gsub(/post\\\[links_attributes\\\]\\\[\\d+\\\]/, 'post[links_attributes]['+$$('#links div').size()+']')+'</div>'});",{:style=>'color:red'}%><br/>
+	<div class='label'><%=f.label :Links,'Links:'%></div>
+	<div class='value'><%=link_to_function 'add link',"$('links').insert({'bottom':'<div>'+$('link_blank').innerHTML.gsub(/post\\\[links_attributes\\\]\\\[\\d+\\\]/, 'post[links_attributes]['+$$('#links div').size()+']')+'</div>'});",{:style=>'color:red'}%></div>
 	<div id='links'>
 	<%=f.fields_for :links do |ls|%>
 	<div <%="style='display:none' id='link_blank'" if ls.object.new_record? && ls.object.errors.blank?%> >
@@ -51,6 +52,7 @@
     <%= ls.check_box :_destroy -%>
 	<br/></div>
 	<%end%></div>
-    <%= f.submit %>
+    <div class='value'><%= f.submit %></div>
+<div class'cb'></div>
   </div>
 <% end %>

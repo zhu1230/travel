@@ -1,24 +1,28 @@
 <!-- <p id="notice"><%#= notice %></p> -->
 <%= javascript_include_tag 'comment.js','lytebox.js'%>
-<%= stylesheet_link_tag 'lytebox.css' %>
-<%=label_tag :Subject%>
-<%=h @post.subject%><Br/>
-<%=label_tag :Country%>
-<%=@post.area.name%><br/>
+<%= stylesheet_link_tag 'lytebox.css','showpost.css' %>
+
+<div class='show'><div class='title'><h1><%=h @post.subject%></h1></div>
+<div class='label'><%=label_tag :Country,'Country:'%></div>
+<div class='value'><%=@post.area.name%></div>
 <%unless @post.pictures.blank?%>
-<%=label_tag :Pictures%><br/>
+<div class='label'><%=label_tag :Pictures,'Pictures:'%></div>
+<div class='pics'>
 <%@post.pictures.each do |pic|%>
-<%=label_tag :Title,'Title:  '%><%=pic.description%><%=link_to (image_tag pic.image.url(:thumb)),pic.image.url(:medium),:rel=>"lyteshow[vacation]"%><br/>
+<li><div class='pic_title'><%=label_tag :Title,'Title:  '%><%=pic.description%></div><div class='pic'><%=link_to (image_tag pic.image.url(:thumb)),pic.image.url(:medium),:rel=>"lyteshow[vacation]"%></div></li>
 <%end%>
+</div>
 <%end%>
-<%unless @post.links%>
-<%=label_tag :Links%><br/>
+<%unless @post.links.blank?%>
+<div class='label'><%=label_tag :Links%></div>
+<div class='links'>
 <%@post.links.each do |link|%>
-<%=link_to link.description.blank? ? link.url : link.description,link.url%><br/>
+<li><%=link_to link.description.blank? ? link.url : link.description,link.url%></li>
 <%end%>
-<%end%>
-<br/>
-<%=render :partial => 'comments',:locals => {:post => @post}%>
-<%=render :partial => 'comment_form',:locals => {:post => @post}%>
+</div>
+<%end%></div>
+
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+<%=render :partial => 'comments',:locals =>  {:post => @post}%>
+<%=render :partial => 'comment_form',:locals => {:post => @post}%>

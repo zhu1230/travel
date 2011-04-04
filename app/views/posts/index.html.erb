@@ -1,23 +1,32 @@
-<h1>Listing posts</h1>
+<h1>Recently Posts</h1>
+<%= stylesheet_link_tag 'postindex.css' %>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<div class='posts'>
 <% @posts.each do |post| %>
+<div class='post'>
+	<div class='title'><%=link_to post.subject,post%></div>
+	<div class='content'>
+		<%post.pictures.each do |p|%>
+<div class='pic'>		<div class='c_title'><%=p.description%></div>
+		<div class='c_pic'><%=image_tag p.image.url(:thumb)%></div>
+		<div class='cb'></div>
+		</div>
+		
+		<%end%>
+		<%post.links.each do |p|%>
+		<div class='c_link'><%=link_to p.description,p.url%></div>
+		<%end%>
+	</div>
+	<div class='user'>
+		<p>By <%=post.user.login if post.user%></p>
+		<p>At <%=post.created_at%></p>
+	</div>
+</div>
 
-  <tr>
-    <td><%= link_to post.subject, post,{:style=>'color:red'} %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
 <% end %>
-</table>
+</div>
 
 <br />
 
-<%= link_to 'New Post', new_post_path %><br/><br/>
+
 

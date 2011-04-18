@@ -91,6 +91,7 @@ class PostsController < ApplicationController
 				@result << t.posts
 		end
 		@result.flatten!.compact!
+		@result.uniq!
 	
 	end
 	def tagged

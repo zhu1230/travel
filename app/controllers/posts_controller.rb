@@ -83,7 +83,15 @@ class PostsController < ApplicationController
   end
 	
 	def search
-		@result=Post.find(:all,:conditions=>['subject like :search',{:search=>'%'+params[:search]+'%'}])
+		@result=Post.where('subject like :search',{:search=>'%'+params[:search]+'%'})
+		ActsAsTaggableOn::Tag.where("name like ?","%"+params[:search]+"%").each do |t|
+			@result << Post.tagged_with(t.name)
+		end
+		Area.where("name like ?","%"+params[:search]+"%").each do |t|
+				@result << t.posts
+		end
+		@result.flatten!.compact!
+	
 	end
 	def tagged
 		@posts=Post.tagged_with(params[:tag])

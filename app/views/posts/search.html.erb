@@ -1,5 +1,6 @@
 <%if @result%>
 <%@result.each  do |post|%>
+<%puts post.class.name%>
 <div><%=link_to post.subject,post_url(post)%></div><br/>
 <%end %><%else%>
 We have not find anything with '<%=params[:search]%>'
